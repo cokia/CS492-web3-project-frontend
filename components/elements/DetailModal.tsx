@@ -39,6 +39,7 @@ const DetailModal: React.FC<any> = ({
 
   const trainToken = async (tokenId: any) => {
     try {
+      //@ts-ignore
       const data = await trainCall([tokenId])
       alert('train success!')
       window.location.reload()
@@ -94,6 +95,8 @@ const DetailModal: React.FC<any> = ({
   }
 
   const dateTimestamp = new Date(parseInt(cutoffdate, 10) * 1000)
+
+  //@ts-ignore
   const readyToTrain = Math.floor((dateTimestamp - new Date()) / 1000) <= 0
 
   // const { isOpen, onOpen, onClose } = useDisclosure()

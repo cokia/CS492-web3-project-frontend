@@ -30,7 +30,7 @@ const Component: React.FC = () => {
           {allTokens.map((token, index) => {
             return (
               <React.Fragment key={index}>
-                <NftListItem token={token} />
+                <NftListItem token_id={0} token={token} />
               </React.Fragment>
             )
           })}
