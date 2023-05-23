@@ -38,7 +38,7 @@ export const useMint = () => {
     try {
       // alert(contract)
       //@ts-ignore
-      const data = await mintCall()
+      const data = await mintCall({ args: [] })
       // alert(data)
       alert(`Successfully minted NFT!`)
     } catch (error) {

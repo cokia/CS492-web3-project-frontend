@@ -40,7 +40,8 @@ const DetailModal: React.FC<any> = ({
   const trainToken = async (tokenId: any) => {
     try {
       //@ts-ignore
-      const data = await trainCall([tokenId])
+      // alert(tokenId)
+      const data = await trainCall({ args: [parseInt(tokenId, 10)] })
       alert('train success!')
       window.location.reload()
     } catch (err) {
