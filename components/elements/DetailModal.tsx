@@ -51,7 +51,7 @@ const DetailModal: React.FC<any> = ({
 
   const getAnimalTypeString = (animalType: any) => {
     switch (animalType) {
-      case 0:
+      case 0: 
         return 'cat'
       case 1:
         return 'dog'
